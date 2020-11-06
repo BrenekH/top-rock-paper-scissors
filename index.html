@@ -3,9 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/index.js"></script>
 </head>
-	<body>
-		<button onclick="game();">Play</button>
+	<body onload="setup();">
+		<div id="scores">
+			<h1 id="player-score">Your Score: 0</h1>
+			<h1 id="comp-score">Opponent Score: 0</h1>
+		</div>
+		<div id="game">
+			<div class="button-container" id="computer-result">
+				<div class="general-button" id="comp-result-rock">Rock</div>
+				<div class="general-button" id="comp-result-paper">Paper</div>
+				<div class="general-button" id="comp-result-scissors">Scissors</div>
+			</div>
+			<h1 id="status-text">Select one:</h1>
+			<div class="button-container" id="player-selection-container">
+				<div class="general-button clickable-button" id="rock">Rock</div>
+				<div class="general-button clickable-button" id="paper">Paper</div>
+				<div class="general-button clickable-button" id="scissors">Scissors</div>
+			</div>
+			<div id="play-again-container">
+				<div class="general-button clickable-button" id="play-again-button">Play Again</div>
+			</div>
+		</div>
 	</body>
 </html>

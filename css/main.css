@@ -1,0 +1,63 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.general-button {
+	background-color: #fff;
+	font-size: 15px;
+	color: #000;
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: default;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* .rps-button {
+	/* Rock Paper Scissors button styling * /
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: default;
+} */
+
+.clickable-button {
+	cursor: pointer;
+}
+
+.clickable-button:hover {
+	box-shadow: 1px 1px 5px #5f5f5f;
+}
+
+#scores {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#comp-score {
+	justify-self: right;
+}
+
+#computer-result {
+	visibility: hidden;
+}
+
+#status-text {
+	text-align: center;
+}
+
+#play-again-container {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+}
+
+#play-again-button {
+	margin-top: 100px;
+	visibility: hidden;
+}
