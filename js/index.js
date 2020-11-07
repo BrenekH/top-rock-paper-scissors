@@ -15,6 +15,8 @@ let playAgainButton = null;
 
 let hidingButtons = null;
 
+let showingResults = false;
+
 function setup() {
 	// Sets up global variables and event listeners
 
@@ -41,11 +43,17 @@ function setup() {
 }
 
 function playGame(playerSelection) {
+	if (showingResults) return;
+	showingResults = true;
 	if (!setupComplete) setup();
 	let computerSelection = computerPlay();
 
 	hideButton(playerSelection, true);
 	hideButton(computerSelection, false);
+
+	rockButton.classList.remove("clickable-button");
+	paperButton.classList.remove("clickable-button");
+	scissorsButton.classList.remove("clickable-button");
 
 	document.getElementById("computer-result").style.visibility = "visible";
 	document.getElementById("status-text").textContent = "vs";
@@ -72,6 +80,13 @@ function reset() {
 	hidingButtons.forEach((b) => {
 		b.style.visibility = "inherit";
 	});
+
+	rockButton.classList.add("clickable-button");
+	paperButton.classList.add("clickable-button");
+	scissorsButton.classList.add("clickable-button");
+
+	playAgainButton.style.visibility = "hidden";
+	showingResults = false;
 }
 
 function hideButton(buttonName="rock", playerButtons=true) {
