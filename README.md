@@ -4,7 +4,7 @@ Rock, Paper, Scissors web game using only client-side javascript.
 
 ## Try for yourself
 
-This is hosted on GitHub pages at <a href="https://zpaw.github.io/top-rock-paper-scissors/" target="_blank">https://zpaw.github.io/top-rock-paper-scissors/</a>.
+This is hosted on GitHub pages at <a href="https://brenekh.github.io/top-rock-paper-scissors/" target="_blank">https://brenekh.github.io/top-rock-paper-scissors/</a>.
 
 ## Origin
 
